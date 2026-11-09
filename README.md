@@ -87,5 +87,3 @@ Alternatively, if `uv` is available:
 uv tool run ruff check .
 uv tool run ruff format .
 ```
-
-Testing is handled separately by the group's testing contributor.
