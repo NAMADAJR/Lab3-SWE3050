@@ -1,3 +1,4 @@
-from Lab2.Quadrilateral import main
+from CLInterface import main
 
-main()
+if __name__ == "__main__":
+    main()
