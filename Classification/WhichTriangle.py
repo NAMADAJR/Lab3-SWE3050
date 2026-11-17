@@ -1,4 +1,3 @@
-
 def enter_side(side):
     while True:
         try:
@@ -6,10 +5,12 @@ def enter_side(side):
         except ValueError:
             print("Invalid input. Please enter a numeric value.\n")
 
+
 def is_valid_triangle(a, b, c):
     if min(a, b, c) <= 0:
         return False
     return a + b > c and a + c > b and b + c > a
+
 
 def classify_triangle(a, b, c):
     if not is_valid_triangle(a, b, c):
@@ -20,6 +21,7 @@ def classify_triangle(a, b, c):
         return "Isosceles"
     return "Scalene"
 
+
 def run():
     a, b, c = (enter_side(side) for side in "abc")
     result = classify_triangle(a, b, c)
@@ -29,4 +31,6 @@ def run():
     else:
         print(f"The triangle is: {result}")
 
-run()
+
+if __name__ == "__main__":
+    run()
